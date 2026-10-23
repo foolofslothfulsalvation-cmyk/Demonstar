@@ -1,0 +1,94 @@
+{
+	"phoneNumber": "2349153327424",
+	"paused": false,
+	"dryRun": true,
+	"groupMode": "trusted-bots",
+	"groups": [],
+	"blockedGroups": [],
+	"bots": [
+		{
+			"name": "Joker",
+			"phone": "233509676154",
+			"prefix": ".j",
+			"enabled": true
+		},
+		{
+			"name": "Subaru",
+			"phone": "2347014606422",
+			"prefix": ".s",
+			"enabled": true
+		},
+		{
+			"name": "Jake",
+			"phone": "2349133219812",
+			"prefix": ".jk",
+			"enabled": true
+		}
+	],
+	"tiers": {
+		"1": {
+			"enabled": false,
+			"probability": 0,
+			"maxPerHour": 0
+		},
+		"2": {
+			"enabled": true,
+			"probability": 0.25,
+			"maxPerHour": 4
+		},
+		"3": {
+			"enabled": true,
+			"probability": 0.75,
+			"maxPerHour": 8
+		},
+		"4": {
+			"enabled": true,
+			"probability": 1,
+			"maxPerHour": 12
+		},
+		"5": {
+			"enabled": true,
+			"probability": 1,
+			"maxPerHour": 20
+		},
+		"6": {
+			"enabled": true,
+			"probability": 1,
+			"maxPerHour": 30
+		}
+	},
+	"limits": {
+		"minGapMs": 2500,
+		"jitterMs": {
+			"min": 300,
+			"max": 900
+		},
+		"maxPerMinute": 6,
+		"maxPerHour": 20,
+		"maxPerDay": 80,
+		"maxPerBatch": 1,
+		"batchWindowMs": 300,
+		"maxCardAgeMs": 15000,
+		"dedupeTtlMs": 600000,
+		"perSourceMaxPerMinute": 2,
+		"lowTierDelayMs": 12000
+	},
+	"control": {
+		"allowedNumbers": []
+	},
+	"backoff": {
+		"rateLimitMs": 300000,
+		"sendFailureMs": 30000
+	},
+	"session": {
+		"healthCheckMs": 300000,
+		"warnAgeDays": 13,
+		"autoRepair": true,
+		"watchdog": true
+	},
+	"notify": {
+		"highTier": true,
+		"claimSummary": false
+	},
+	"logLevel": "info"
+}

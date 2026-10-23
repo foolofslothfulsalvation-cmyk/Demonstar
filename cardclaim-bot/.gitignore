@@ -1,0 +1,11 @@
+node_modules/
+
+# Linked WhatsApp session — never commit this, it IS your account.
+auth_info/
+auth_info.bak-*/
+
+# Environment variables — never commit, contains your phone number
+.env
+
+*.log
+.DS_Store
